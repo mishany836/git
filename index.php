@@ -1,18 +1,15 @@
 <?php
 
+/* $text = '2355 5679 3456 9876';
+$reg = preg_match_all("#([0-9]{4})#",$text,$arr);
+var_dump($reg);
+echo '<pre>';
+print_r($arr);
+echo '</pre>'; */
 
-?>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>title</h1>
-    <p>text</p>
-    <p>это новый параграф</p>
-    <p>это новый параграф2</p>
-</body>
-</html>
+$text = '<b>text</b> rtrtrtr ghvhgkkyu<i>italic</i>';
+$reg = preg_match_all("#<[^>]+>#",$text,$arr);//лайф хак для поиска тегов
+var_dump($reg);
+echo '<pre>';
+print_r($arr);
+echo '</pre>';
